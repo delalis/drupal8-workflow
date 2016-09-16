@@ -1,0 +1,34 @@
+uuid: 4053cf7f-155b-40d8-aac2-4011a283b337
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_eventbrite_id
+    - node.type.event
+  module:
+    - eventbrite_formatter
+    - text
+    - user
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_eventbrite_id:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: event_brite_field_formatter
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 0a5fa297-b590-4ab8-8c21-0923c96bdd40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_eventbrite_id
+    - node.type.event
+  module:
+    - text
+id: node.event.field_eventbrite_id
+field_name: field_eventbrite_id
+entity_type: node
+bundle: event
+label: 'EventBrite ID'
+description: 'Enter the event brite id and the associated form will be rendered'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
